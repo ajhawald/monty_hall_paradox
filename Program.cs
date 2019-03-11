@@ -97,16 +97,15 @@ namespace montyhall
 
         protected static int pickShowWindow(int playersWindow)
         {
-            CryptoRandom rng = new CryptoRandom();
-            int showWindow = 0;
-            showWindow = rng.Next(2, 4);
-
-            while (showWindow == playersWindow)
+            switch (playersWindow)
             {
-                showWindow = rng.Next(2, 4);
+                case 2:
+                    return 3;
+                case 3:
+                    return 2;
+                default://should never hit
+                    return 3;
             }
-
-            return showWindow;
         }
 
 
