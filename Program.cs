@@ -18,7 +18,7 @@ namespace montyhall
             //There are three windows/doors/curtains, whatever. 
             //Only one is the winner. But you can't tell until the window is opened.
             //You choose a window 1,2 or 3.
-            //After choosing one of the remaining windows is opened to show that it is not the winner.
+            //After choosing, one of the remaining windows is opened to show that it is not the winner.
             //Now there are only 2 windows left, one is the one you initially picked.
             //You now have the option of staying with your selection, or choosing the other remaining window.
             //Do your chances change if you change your initial selection to the remaining window?
@@ -42,7 +42,7 @@ namespace montyhall
                     //Console.WriteLine("Win!");
                 }
             }
-            Console.WriteLine("There were " + numWinsScenarioA + " wins out of " + tries + " attempts.");
+            Console.WriteLine("Scenario1: There were " + numWinsScenarioA + " wins out of " + tries + " attempts.");
 
 
             Console.WriteLine("");
@@ -79,7 +79,7 @@ namespace montyhall
                 }
             }
 
-            Console.WriteLine("There were " + numWinsScenarioB + " wins out of " + tries + " attempts.");
+            Console.WriteLine("Scenario2: There were " + numWinsScenarioB + " wins out of " + tries + " attempts.");
 
 
 
